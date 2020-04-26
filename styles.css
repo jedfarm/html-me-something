@@ -1,0 +1,15 @@
+h1 {
+    /*background-image: url('images/fear_of_hell.jpg');
+    background-size: auto, 40px; */
+    font-size: 60px;
+
+}
+
+p{
+    font-size: 25px; 
+}
+
+#Intro {
+    background-image: url('images/fear_of_hell.jpg');
+    opacity: 0.5;
+}
