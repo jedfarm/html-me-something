@@ -1,15 +1,94 @@
-h1 {
-    /*background-image: url('images/fear_of_hell.jpg');
-    background-size: auto, 40px; */
-    font-size: 60px;
 
+article{
+    
+}
+
+body{
+    background-image: url('images/art.jpg');
+}
+
+h1 {
+    
+    font-family: 'Righteous', cursive;
+    font-size: 3.5em;
+    text-align: center; 
+    /*background-color: #f1f1f1;*/
+    padding: 20px;
+}
+
+h2{
+    font-family: 'Righteous', cursive;
+    font-size: 2.5em;
+    font-weight: bold;
+    letter-spacing: 1px; 
+    margin-top: 100px;
+    margin-bottom: 20px;
+    margin-left: 150px;
+}
+
+h4{
+    font: italic normal bold 1.4em georgia, sans-serif;
+	letter-spacing: 1px; 
 }
 
 p{
-    font-size: 25px; 
+    font-family: 'Roboto', sans-serif;
+    font-size: 27px; 
+    text-align: justify;
+    text-indent: 50px;
+    line-height: 180%;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
+p::first-letter {
+    /*color: #ff0000; */
+    font-size: xx-large;
+  }
 
 #Intro {
+    position: relative; 
+    height: auto;
+    width: 100%;
+    /*display: flex;*/
     background-image: url('images/fear_of_hell.jpg');
-    opacity: 0.5;
+    background-size: cover;
+}
+
+#Intro::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.35);
+}
+
+#Intro > p {
+    color:rgba(255, 255, 255, 1);
+    width: 75%;
+    position: relative;
+}
+#Intro * h2{
+    color:rgba(255, 255, 255, 1);
+    position: relative;
+}
+
+#Happened > img{
+    float: right;
+    max-width: 25%;
+    height: auto;
+}
+
+#Comedy > img{
+    float: left;
+    /*max-width: 25%;
+    height: auto;*/
+}
+
+#Comedy * p{
+    margin-left: 20px;
+    margin-right: 20px; 
 }
