@@ -92,3 +92,21 @@ p::first-letter {
     margin-left: 20px;
     margin-right: 20px; 
 }
+
+.left {
+    float: left;
+    shape-outside: polygon(0 0, 0 500px, 200px 500px);
+    clip-path: polygon(0 0, 0 500px, 200px 500px);
+    background: linear-gradient(to top right, #67D7F5, #86F7CC);
+    height: 500px;
+    width: 500px;
+  }
+  
+  .right {
+    float: right;
+    shape-outside: polygon(200px 500px, 300px 500px, 300px 0, 0 0);
+    clip-path: polygon(200px 500px, 300px 500px, 300px 0, 0 0);
+    background: linear-gradient(to bottom left, #67D7F5, #86F7CC);
+    height: 500px;
+    width: 300px;
+  }
